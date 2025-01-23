@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+ }
+ 
+ h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+ }
+ 
+ button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+ }
+ 
+ .board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+ }
+ 
+ .square {
+  width: 150px;
+  height: 150px;
+  background-color: hsla(0, 64%, 98%, 0.616);
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+ }
+ 
+ .square img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+ }
+ 
+ .winner-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ button.play-again {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  background-color: rgb(231, 58, 58);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+ }
